@@ -1,0 +1,66 @@
+import Image from 'next/image'
+
+const style = {
+  wrapper:
+    'flex flex-col space-y-2 divide-y divide-[#343536] rounded border border-[#343536] bg-[#1a1a1b] p-4 text-gray-300',
+  profileInfoContainer: 'flex items-center space-x-4 ',
+  profilePicContainer: `relative h-12 w-12`,
+  profilePic: 'object-contain',
+  aboutContent: 'py-2 text-sm',
+  statsWrapper: 'flex items-center space-x-16',
+  stat: 'flex flex-col',
+  statTitle: 'text-xs',
+  footer: 'flex flex-col space-y-4 pt-2',
+  createdAt: 'text-sm font-light',
+  joinedButton:
+    'cursor-pointer rounded-full border border-gray-300 py-1 text-center text-sm font-semibold',
+}
+
+const About = () => {
+  return (
+    <div className={style.wrapper}>
+      <div className='pb-2'>
+        <div className={style.profileInfoContainer}>
+          <div className={style.profilePicContainer}>
+            <Image
+              src='https://media.licdn.com/dms/image/D5603AQEUnnUZdBILTw/profile-displayphoto-shrink_800_800/0/1678530059186?e=1689206400&v=beta&t=Cdv-9tVAUVT9-f4BcsMfEqzDj3miXZOoq-ImMM-2FVA'
+              layout='fill'
+              className={style.profilePic}
+              alt='Profile Image'
+            />
+          </div>
+          <p>r/ninadvyas</p>
+        </div>
+        <p className={style.aboutContent}>
+          Clever Programmer, a community with over 1M+ devs who are learning to
+          code. We build real-world stuff with code. Turn our dreams into
+          reality with Programming. We speak business and code fluently. Here at
+          Reddit, you can find us sharing our coding war stories around a
+          fireplace. So, grab a cup of coffee and join us. We got lots to catch
+          up on… You'll find awesome programming lessons here! Also, expect
+          programming tips and tricks that will take your coding skills to the
+          next level.
+        </p>
+
+        <div className={style.statsWrapper}>
+          <div className={style.stat}>
+            <span>2.1m</span>
+            <span className={style.statTitle}>Members</span>
+          </div>
+          <div className={style.stat}>
+            <span>246</span>
+            <span className={style.statTitle}>Online</span>
+          </div>
+        </div>
+      </div>
+
+      <div className={style.footer}>
+        <p className={style.createdAt}>Created Jan 31, 2021</p>
+
+        <div className={style.joinedButton}>Joined</div>
+      </div>
+    </div>
+  )
+}
+
+export default About
