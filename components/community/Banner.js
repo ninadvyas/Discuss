@@ -1,5 +1,5 @@
 import Image from 'next/image'
-
+import reddit from './reddit.jpg'
 const style = {
   wrapper: 'mt-14 flex flex-col',
   bannerImage: 'h-52 relative',
@@ -21,10 +21,10 @@ const Banner = () => {
     <div className={style.wrapper}>
       <div className={style.bannerImage}>
         <Image
-          src='https://i.ibb.co/27918K9/channels4-banner.jpg'
+          src={reddit}
           layout='fill'
           className='object-cover'
-          alt=''
+          alt='here'
         />
       </div>
       <div className='bg-[#1a1a1b]'>
