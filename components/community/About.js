@@ -1,54 +1,52 @@
-import Image from 'next/image'
+import Image from "next/image";
 
 const style = {
   wrapper:
-    'flex flex-col space-y-2 divide-y divide-[#343536] rounded border border-[#343536] bg-[#1a1a1b] p-4 text-gray-300',
-  profileInfoContainer: 'flex items-center space-x-4 ',
+    "flex flex-col space-y-2 divide-y divide-[#343536] rounded border border-[#343536] bg-[#1a1a1b] p-4 text-gray-300",
+  profileInfoContainer: "flex items-center space-x-4 ",
   profilePicContainer: `relative h-12 w-12`,
-  profilePic: 'object-contain',
-  aboutContent: 'py-2 text-sm',
-  statsWrapper: 'flex items-center space-x-16',
-  stat: 'flex flex-col',
-  statTitle: 'text-xs',
-  footer: 'flex flex-col space-y-4 pt-2',
-  createdAt: 'text-sm font-light',
+  profilePic: "object-contain",
+  aboutContent: "py-2 text-sm",
+  statsWrapper: "flex items-center space-x-16",
+  stat: "flex flex-col",
+  statTitle: "text-xs",
+  footer: "flex flex-col space-y-4 pt-2",
+  createdAt: "text-sm font-light",
   joinedButton:
-    'cursor-pointer rounded-full border border-gray-300 py-1 text-center text-sm font-semibold',
-}
+    "cursor-pointer rounded-full border border-gray-300 py-1 text-center text-sm font-semibold",
+};
 
 const About = () => {
   return (
     <div className={style.wrapper}>
-      <div className='pb-2'>
+      <div className="pb-2">
         <div className={style.profileInfoContainer}>
           <div className={style.profilePicContainer}>
             <Image
-              src='https://media.licdn.com/dms/image/D5603AQEUnnUZdBILTw/profile-displayphoto-shrink_800_800/0/1678530059186?e=1689206400&v=beta&t=Cdv-9tVAUVT9-f4BcsMfEqzDj3miXZOoq-ImMM-2FVA'
-              layout='fill'
+              src="https://media.licdn.com/dms/image/D5603AQEUnnUZdBILTw/profile-displayphoto-shrink_800_800/0/1678530059186?e=1689206400&v=beta&t=Cdv-9tVAUVT9-f4BcsMfEqzDj3miXZOoq-ImMM-2FVA"
+              layout="fill"
               className={style.profilePic}
-              alt='Profile Image'
+              alt="Profile Image"
             />
           </div>
           <p>r/ninadvyas</p>
         </div>
         <p className={style.aboutContent}>
-          Clever Programmer, a community with over 1M+ devs who are learning to
-          code. We build real-world stuff with code. Turn our dreams into
-          reality with Programming. We speak business and code fluently. Here at
-          Reddit, you can find us sharing our coding war stories around a
-          fireplace. So, grab a cup of coffee and join us. We got lots to catch
-          up on… You'll find awesome programming lessons here! Also, expect
-          programming tips and tricks that will take your coding skills to the
-          next level.
+          I am a full stack developer with a passion for building robust and
+          user-friendly web applications. Experienced in both front-end and
+          back-end development, I specialize in utilizing a wide range of
+          technologies such as HTML, CSS, JavaScript, Python, and SQL. Let's
+          connect and collaborate on innovative projects to enhance the digital
+          experience!
         </p>
 
         <div className={style.statsWrapper}>
           <div className={style.stat}>
-            <span>2.1m</span>
+            <span>705K</span>
             <span className={style.statTitle}>Members</span>
           </div>
           <div className={style.stat}>
-            <span>246</span>
+            <span>22246</span>
             <span className={style.statTitle}>Online</span>
           </div>
         </div>
@@ -60,7 +58,7 @@ const About = () => {
         <div className={style.joinedButton}>Joined</div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;
