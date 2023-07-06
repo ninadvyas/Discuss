@@ -26,14 +26,14 @@ const Header = () => {
               <Icons />
 
               <button>
-                <div className={style.profileImageContainer}>
+                {/* <div className={style.profileImageContainer}>
                     <Image
                       className={style.profileImage}
                       src='https://i.ibb.co/GnJX4cQ/asu-Dq-Tg-R-400x400.jpg'
                       layout='fill'
                       alt='Profile Image'
                     />
-                </div>
+                </div> */}
               </button>
             </div>
           </div>
