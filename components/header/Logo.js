@@ -24,6 +24,7 @@ const Logo = () => {
           </svg>
         </div>
         <div>
+
           <svg
             className='h-[18px] w-auto'
             viewBox='0 0 57 18'
