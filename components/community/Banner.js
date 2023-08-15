@@ -33,7 +33,7 @@ const Banner = () => {
             <div className={style.profilePicWrapper}>
               <Image
                 className={style.profilePic}
-                src='https://media.licdn.com/dms/image/D5603AQEUnnUZdBILTw/profile-displayphoto-shrink_800_800/0/1678530059186?e=1689206400&v=beta&t=Cdv-9tVAUVT9-f4BcsMfEqzDj3miXZOoq-ImMM-2FVA'
+                src='https://avatars.githubusercontent.com/u/115214615?v=4'
                 layout='fill'
                 alt=''
               />

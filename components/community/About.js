@@ -23,7 +23,7 @@ const About = () => {
         <div className={style.profileInfoContainer}>
           <div className={style.profilePicContainer}>
             <Image
-              src="https://media.licdn.com/dms/image/D5603AQEUnnUZdBILTw/profile-displayphoto-shrink_800_800/0/1678530059186?e=1689206400&v=beta&t=Cdv-9tVAUVT9-f4BcsMfEqzDj3miXZOoq-ImMM-2FVA"
+              src="https://avatars.githubusercontent.com/u/115214615?v=4"
               layout="fill"
               className={style.profilePic}
               alt="Profile Image"
@@ -35,7 +35,7 @@ const About = () => {
           I am a full stack developer with a passion for building robust and
           user-friendly web applications. Experienced in both front-end and
           back-end development, I specialize in utilizing a wide range of
-          technologies such as HTML, CSS, JavaScript, Python, and SQL. Let's
+          technologies such as HTML, CSS, JavaScript, Python, and SQL. Lets
           connect and collaborate on innovative projects to enhance the digital
           experience!
         </p>
