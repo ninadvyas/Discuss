@@ -3,10 +3,9 @@ import Header from '../components/header'
 import Banner from '../components/community/Banner'
 import CreatePost from '../components/feed/CreatePost'
 import About from '../components/community/About'
-import Feed from '../components/Feed'
+import Feed from '../components/feed/index'
 import { useEffect, useState } from 'react'
 import useSWR from 'swr'
-import Post from '../components/common/Post';
 
 const style = {
   wrapper: `flex min-h-screen flex-col bg-black text-white`,
