@@ -18,14 +18,8 @@ const style = {
 const Home: NextPage = () => {
   const [myposts,setMypost]=useState([])
 
-  const fetcher = (...args: any[]) => fetch(...args).then(res => res.json())
-  const {data,error} = useSWR('/api/get-posts',fetcher)
+  const {data,error} = useSWR('/api/get-posts')
 
-  console.log(data,'🫥')
-  useEffect(()=> {
-    if(!data) return
-    setMypost(data.data)
-  },[data])
   return (
     <div className={style.wrapper}>
       <Header />
@@ -33,7 +27,7 @@ const Home: NextPage = () => {
       <main className={style.main}>
         <div className={style.content}>
           <CreatePost />
-          <Feed posts={myposts}/>
+          <Feed/>
         </div>
         <div className={style.infoContainer}>
           <About />

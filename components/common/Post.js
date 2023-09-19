@@ -8,7 +8,7 @@ const style = {
   postTitle: "text-lg font-medium text-gray-50",
   postContent: "text-sm font-light text-gray-400",
 };
-const Post = ({id,title,author}) => {
+const Post = ({id,title,author,content}) => {
   return (
     <div className={style.wrapper}>
       <Vote />
@@ -18,12 +18,7 @@ const Post = ({id,title,author}) => {
          {title}
         </h1>
         <p className={style.postContent}>
-          To build a Reddit clone with Next.js, you would need to use
-          server-side rendering to fetch and display data from a backend API.
-          You could use a popular UI library like React or Material-UI to build
-          the front-end interface. You would also need to set up authentication
-          and user sessions, as well as implement features like upvoting and
-          commenting.
+        {content}
         </p>
         <Actions />
       </div>

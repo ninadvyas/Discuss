@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import reddit from './reddit.jpg'
+
 const style = {
   wrapper: 'mt-14 flex flex-col',
   bannerImage: 'h-52 relative',
@@ -21,7 +21,7 @@ const Banner = () => {
     <div className={style.wrapper}>
       <div className={style.bannerImage}>
         <Image
-          src={reddit}
+          src='https://i.pinimg.com/originals/6c/b0/99/6cb0995cbfe30ac62d215a5e558c2303.jpg'
           layout='fill'
           className='object-cover'
           alt='here'
