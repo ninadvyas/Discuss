@@ -24,20 +24,9 @@ const Icons = () => {
   return (
     <div className={style.wrapper}>
       <div className={style.iconsLeft}>
-        <IconItem Icon={SparklesIcon} />
-        <IconItem Icon={GlobeIcon} />
-        <IconItem Icon={VideoCameraIcon} />
-      </div>
-      <div className={style.iconsRight}>
         <IconItem Icon={ChatIcon} />
         <IconItem Icon={BellIcon} />
         <IconItem Icon={PlusIcon} />
-        <IconItem Icon={SpeakerphoneIcon} />
-
-        <button className={style.freeBtn}>
-          <CurrencyDollarIcon className={style.dollarIcon} />
-          <span className={style.smallText}>Free</span>
-        </button>
       </div>
     </div>
   )
